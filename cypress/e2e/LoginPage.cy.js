@@ -13,7 +13,7 @@ describe('Login Page', () => {
             cy.wait(3000);
             cy.get('#Email').type('irpravin@gmail.com');
             cy.get('#Next').should('be.visible').and('not.be.disabled').click();
-            cy.get('#Password').type('Jameen2001@yahoo.com');
+            cy.get('#Password').type('');
             cy.get('#SignIn').should('be.visible').click();
             cy.wait(3000);
         });
